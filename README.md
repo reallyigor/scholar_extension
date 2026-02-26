@@ -91,7 +91,3 @@ python3 icons/generate_icons.py
 | `host_permissions: api.semanticscholar.org` | Fetch citation data directly from the page |
 
 No data is sent to any server other than Semantic Scholar's public API.
-
-## License
-
-MIT
