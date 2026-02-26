@@ -1,0 +1,13 @@
+{
+  "name": "scholar-lens-for-arxiv",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chrome extension: Scholar stats on arXiv pages",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}

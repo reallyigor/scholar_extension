@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Scholar Lens for arXiv",
+  "version": "1.0.0",
+  "description": "See citation stats, top citing papers, and top author papers for any arXiv paper — powered by Semantic Scholar.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://arxiv.org/*",
+    "https://api.semanticscholar.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://arxiv.org/abs/*",
+        "https://arxiv.org/html/*",
+        "https://arxiv.org/pdf/*"
+      ],
+      "js": ["utils.js", "content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Scholar Lens for arXiv"
+  }
+}
